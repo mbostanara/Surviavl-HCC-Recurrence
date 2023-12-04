@@ -1526,7 +1526,7 @@ ggsurvplot(
   # Add risk table
   title = "Cox-PH survival curve",
   xlab = "Time in years",
-  ylim = c(0.42, 1),
+  ylim = c(0.25, 1),
   xlim = c(0, 7200),
   # risk.table.col = "strata",# Risk table color by groups
   # legend.labs =
@@ -1783,14 +1783,14 @@ Pred_train
     ## Prediction: 652 observations
     ## predict.type: response
     ## threshold: 
-    ## time: 1.90
+    ## time: 1.89
     ##   truth.time truth.event  response
-    ## 1        284           1 0.5314383
-    ## 2        353           1 0.8244778
-    ## 3       2922           1 0.3546179
-    ## 4        190           1 0.6931540
-    ## 5        514           0 0.5010299
-    ## 6        284           0 0.4241601
+    ## 1        284           1 0.5064187
+    ## 2        353           1 0.8115780
+    ## 3       2922           1 0.3502782
+    ## 4        190           1 0.6924905
+    ## 5        514           0 0.4927003
+    ## 6        284           0 0.3912721
     ## ... (#rows: 652, #cols: 3)
 
 ``` r
@@ -1801,14 +1801,14 @@ Pred_test
     ## Prediction: 260 observations
     ## predict.type: response
     ## threshold: 
-    ## time: 0.74
+    ## time: 0.89
     ##   truth.time truth.event  response
-    ## 1       2334           1 0.3271616
-    ## 2       1436           1 0.4458910
-    ## 3       1137           1 0.3458684
-    ## 4       1035           1 0.7965868
-    ## 5        681           1 0.7469896
-    ## 6       4873           1 0.4935680
+    ## 1       2334           1 0.3544802
+    ## 2       1436           1 0.4637180
+    ## 3       1137           1 0.3128952
+    ## 4       1035           1 0.7820540
+    ## 5        681           1 0.7288299
+    ## 6       4873           1 0.4986894
     ## ... (#rows: 260, #cols: 3)
 
 ``` r
@@ -1826,7 +1826,7 @@ paste(
 )
 ```
 
-    ## [1] "In the Random Forest model: the C-Index is  0.841  for the train set,  and the C-index is  0.64  for the test set."
+    ## [1] "In the Random Forest model: the C-Index is  0.842  for the train set,  and the C-index is  0.639  for the test set."
 
 ##### Significant features of the univariate cox
 
@@ -1890,14 +1890,14 @@ Pred_train_sign_uni
     ## Prediction: 652 observations
     ## predict.type: response
     ## threshold: 
-    ## time: 1.65
+    ## time: 1.75
     ##   truth.time truth.event  response
-    ## 1        284           1 0.3677149
-    ## 2        353           1 0.9109499
-    ## 3       2922           1 0.4398127
-    ## 4        190           1 0.7294228
-    ## 5        514           0 0.5006222
-    ## 6        284           0 0.5405864
+    ## 1        284           1 0.3781018
+    ## 2        353           1 0.8982143
+    ## 3       2922           1 0.4344063
+    ## 4        190           1 0.6846568
+    ## 5        514           0 0.5180305
+    ## 6        284           0 0.5721470
     ## ... (#rows: 652, #cols: 3)
 
 ``` r
@@ -1911,12 +1911,12 @@ Pred_test_sign_uni
     ## threshold: 
     ## time: 0.72
     ##   truth.time truth.event  response
-    ## 1       2334           1 0.2061154
-    ## 2       1436           1 0.4572098
-    ## 3       1137           1 0.5839697
-    ## 4       1035           1 0.6177497
-    ## 5        681           1 0.6190088
-    ## 6       4873           1 0.5038759
+    ## 1       2334           1 0.1984682
+    ## 2       1436           1 0.4496858
+    ## 3       1137           1 0.5891686
+    ## 4       1035           1 0.6087493
+    ## 5        681           1 0.6291231
+    ## 6       4873           1 0.5174124
     ## ... (#rows: 260, #cols: 3)
 
 ``` r
@@ -1963,14 +1963,14 @@ Pred_train_sign
     ## Prediction: 652 observations
     ## predict.type: response
     ## threshold: 
-    ## time: 1.39
+    ## time: 1.46
     ##   truth.time truth.event  response
-    ## 1        284           1 0.2187649
-    ## 2        353           1 0.6590110
-    ## 3       2922           1 0.3744626
-    ## 4        190           1 0.5933657
-    ## 5        514           0 0.5066109
-    ## 6        284           0 0.9913765
+    ## 1        284           1 0.2220172
+    ## 2        353           1 0.6564135
+    ## 3       2922           1 0.3699315
+    ## 4        190           1 0.5992125
+    ## 5        514           0 0.4890678
+    ## 6        284           0 0.9945486
     ## ... (#rows: 652, #cols: 3)
 
 ``` r
@@ -1981,14 +1981,14 @@ Pred_test_sign
     ## Prediction: 260 observations
     ## predict.type: response
     ## threshold: 
-    ## time: 0.56
+    ## time: 0.55
     ##   truth.time truth.event  response
-    ## 1       2334           1 0.2692645
-    ## 2       1436           1 0.3744626
-    ## 3       1137           1 0.3744626
-    ## 4       1035           1 0.5933657
-    ## 5        681           1 0.9027134
-    ## 6       4873           1 0.6282430
+    ## 1       2334           1 0.2742020
+    ## 2       1436           1 0.3699315
+    ## 3       1137           1 0.3699315
+    ## 4       1035           1 0.5992125
+    ## 5        681           1 0.8736536
+    ## 6       4873           1 0.6421160
     ## ... (#rows: 260, #cols: 3)
 
 ``` r
@@ -2006,7 +2006,7 @@ paste(
 )
 ```
 
-    ## [1] "In the Random Forest model: the C-Index is  0.645  for the train set,  and the C-index is  0.594  for the test set."
+    ## [1] "In the Random Forest model: the C-Index is  0.646  for the train set,  and the C-index is  0.597  for the test set."
 
 ## Comparison of the three models, Kaplan Meier, Cox-PH, and Random Forest
 
